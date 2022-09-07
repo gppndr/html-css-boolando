@@ -39,6 +39,10 @@ a {
   text-decoration: none;
 }
 
+.space-between {
+  justify-content: space-between;
+}
+
 /* #region columns */
 .col-4 {
   width: calc((100% / 12) * 4);
@@ -66,7 +70,7 @@ header .menu {
 
 header .user {
   flex-basis: 20%;
-} 
+}
 
 .logo > a {
   display: flex;
@@ -90,20 +94,19 @@ header .flex_menu {
 header .flex_icons {
   display: flex;
   justify-content: flex-end;
-} 
-
+}
 
 /* #endregion header */
 
-/*#regiom main */
-#site_main{
-    padding: 4rem 0
+/*#region main */
+#site_main {
+  padding: 4rem 0;
 }
-main .space{
-    padding: 3rem;
+main .space {
+  padding: 3rem;
 }
 .col-4 img {
- max-width: 100%;
+  max-width: 100%;
 }
 
 .hover-img {
@@ -115,7 +118,8 @@ main .space{
 }
 
 /*#region elementi sopra la card */
-.heart, .onclick_heart {
+.heart,
+.onclick_heart {
   position: absolute;
   bottom: 90%;
   right: 1%;
@@ -124,13 +128,13 @@ main .space{
   background-color: white;
 }
 
-.heart{
-    color: black;
+.heart {
+  color: black;
 }
 
-.onclick_heart{
-    color: var(--var-red);
-    display: none;
+.onclick_heart {
+  color: var(--var-red);
+  display: none;
 }
 .discount {
   position: absolute;
@@ -153,16 +157,28 @@ main .space{
   background-color: var(--var-green);
   color: white;
 }
-/* #endregion */
 
-/* #region caption */ 
-
-span.discount-price{
-    font-weight: bold;
-    color: var(--var-red);
+.sustainability-last {
+  position: absolute;
+  bottom: 10%;
+  left: 0;
+  font-size: 0.8rem;
+  padding: 0.3rem;
+  font-weight: bold;
+  background-color: var(--var-green);
+  color: white;
 }
 
-span.strikethrough{
+/* #endregion */
+
+/* #region caption */
+
+span.discount-price {
+  font-weight: bold;
+  color: var(--var-red);
+}
+
+span.strikethrough {
   font-weight: bold;
   text-decoration: line-through;
 }
@@ -170,13 +186,43 @@ span.strikethrough{
 
 /* #region hover and onclick */
 
-.hearts:active .heart{
-display: none;
+.hearts:active .heart {
+  display: none;
 }
 
-.hearts:active .onclick_heart{
-    display: inline-block;
+.hearts:active .onclick_heart {
+  display: inline-block;
+}
+
+.card:hover .nohover-img {
+  display: none;
+}
+
+.card:hover .hover-img {
+  display: inline-block;
 }
 /* #endregion */
 
 /* #endregion */
+
+/* footer */
+footer {
+  background-color: var(--var-black);
+  padding: 1rem 0;
+}
+
+.company, .contacts, .info, .social{
+  color: white;
+  padding: 0.5rem 0;
+}
+
+.info a{
+    color: white;
+    padding-right: 1rem;
+}
+
+.social a{
+    color: white;
+    padding-left: 0.5rem;
+    font-size: 1.3rem;
+}
