@@ -6,3 +6,73 @@
   --var-red: #ff0000;
   --var-orange: #ff6900;
 }
+
+/* #region common_rules */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: 'Inter', sans-serif;
+}
+/* #endregion common_rules */
+
+/* #regiom utilities */
+
+.container {
+  width: 80%;
+  max-width: 1200px;
+  margin: 0 auto;
+  text-align: center;
+  padding: 1rem 0;
+}
+
+.d-flex {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.row {
+  display: flex;
+  gap: 1rem;
+}
+
+a {
+    text-decoration: none;
+}
+
+
+/* #region header */
+header {
+    background-color: var(--var-orange);
+}
+
+header .bool_logo{
+    width: 27%;
+}
+
+header .menu{
+flex-basis: 50%;
+}
+
+header .user {
+    flex-basis: 50%;
+}
+
+.flex_menu>a, .flex_icons>a{
+    font-size: 1.2rem;
+    color: white;
+    font-weight: bold;
+    padding-right: 1rem ;
+}
+
+header .flex_menu {
+   display: flex;
+   justify-content: flex-start;
+}
+
+header .flex_icons{
+    display: flex;
+    justify-content: flex-end;
+}
+/* #endregion header */
